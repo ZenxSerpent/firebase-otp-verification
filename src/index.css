@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #fee440;
+    width: 100vw;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.app__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.bkgsvg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+
+.links {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.out-top {
+animation: rotate 20s linear infinite;
+transform-origin: 13px 25px;
+}
+.in-top {
+animation: rotate 10s linear infinite;
+transform-origin: 13px 25px;
+}
+.out-bottom {
+animation: rotate 25s linear infinite;
+transform-origin: 84px 93px;
+}
+.in-bottom {
+animation: rotate 15s linear infinite;
+transform-origin: 84px 93px;
+}
+@keyframes rotate {
+    0% {
+   transform: rotate(0deg);
+}
+100% {
+   transform: rotate(360deg);
+}
+}
+
+.morph{
+    background: rgba( 255, 255, 255, 0.3 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 10px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
